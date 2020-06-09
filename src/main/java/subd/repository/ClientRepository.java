@@ -1,10 +1,10 @@
-package ru.ulstu.repository;
+package subd.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.ulstu.model.Client;
+import subd.model.Client;
 
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Integer> {
-    List<Client> findByName(String name);
+
 }
