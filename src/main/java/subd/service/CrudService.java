@@ -152,10 +152,7 @@ public class CrudService {
         log.info("All TechnicalDates:\n");
         log.info(td.findAll().toString());
     }
-    All Technical Dates:
-    []
-
-
+                              
     private static final Logger log = LoggerFactory.getLogger(CrudService.class);
 
     public void showFirstPageOfRecords() {
