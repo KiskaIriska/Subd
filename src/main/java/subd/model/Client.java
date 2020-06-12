@@ -27,7 +27,7 @@ public class Client  {
     }
     public String toString() {
         return clientfio + ", "+ passport + ", " + address + ", "
-                + phone+"\n";
+                + phone;
     }
     public String getClientfio(){
         return clientfio;

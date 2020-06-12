@@ -6,6 +6,6 @@ import subd.model.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
-    @Query(" select employeefio from employee where position='menedzher' ORDER BY id ASC;")
-    public List<Employee> getEmployeeByMenedzherPosition();
+    @Query(" select employeefio from employee where position = pos ORDER BY id ASC;")
+    public List<Employee> getEmployeeByMenedzherPosition(String pos);
 }

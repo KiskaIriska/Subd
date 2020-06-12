@@ -59,7 +59,7 @@ public class CarsService implements Crud<Car> {
     carRepository.delete(customer);
     }
 
-    public void zapros (){
-        System.out.println(carRepository.getCar());
+    public String zapros (){
+        return carRepository.getCar().toString();
     }
 }

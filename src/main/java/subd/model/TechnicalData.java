@@ -28,8 +28,8 @@ public class TechnicalData {
     }
 
     public String toString() {
-        return doorType + ", "+ bodyType + ", " + seatsNumber + ", "
-                + engineType+", " + engineVolume +"\n";
+        return doorType + ", "+ bodyType + ", "
+                + engineType;
     }
 
     public String getDoorType() {

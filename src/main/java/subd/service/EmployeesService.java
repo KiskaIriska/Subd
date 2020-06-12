@@ -18,21 +18,25 @@ public class EmployeesService implements Crud<Employee> {
 
     @Override
     public Employee create(Employee spec) {
+
         return EmployeeRepository.save(spec);
     }
 
     @Override
     public List<Employee> findAll() {
+
         return employeeRepository.findAll();
     }
 
     @Override
     public Employee get(int id) {
+
         return employeeRepository.getOne(id);
     }
 
     @Override
     public Optional<Employee> find(int id) {
+
         return employeeRepository.findById(id);
     }
 
@@ -44,14 +48,16 @@ public class EmployeesService implements Crud<Employee> {
     }
     @Override
     public Employee update(Client spec) {
+
         return employeeRepository.save(spec);
     }
 
     @Override
     public void delete(int id) {
+
         employeeRepository.deleteById(id);
     }
-    public void zapros (){
-        System.out.println(employeeRepository.getEmployeeByMenedzherPosition());
+    public String zapros (Sting pos){
+        return employeeRepository.getEmployeeByMenedzherPosition(pos).toString();
     }
 }

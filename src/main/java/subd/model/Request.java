@@ -27,15 +27,15 @@ public class Request{
         this.date=date;
         this.car.carid=carid;
         this.client.clientid=clientid;
-        this.date=date;
+        this.delivery= delivery;
         this.employee.employeeid=employeeid;
         this.sum=sum;
     }
 
     @Override
     public String toString() {
-        return  contractId + ", " + zakazDate + ", " + auto.id + ", "+client.passport+", "+
-                zakazPrice+", "+zakaz.id+", "+motorShow.address+"\n";
+        return  date +", "+
+                zakazPrice+", "+ delivery;
     }
 
 

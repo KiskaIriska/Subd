@@ -57,7 +57,8 @@ public class RequestsService implements Crud<Request> {
 
         requestRepository.delete(customer);
     }
-    public void zapros (){
-    System.out.println(requestRepository.getRequestByDate());
+    public String zapros (Timestamp dateFrom, Timestamp dateTo){
+
+    return requestRepository.getRequestByDate(dateFrom, dateTo).toString();
     }
 }

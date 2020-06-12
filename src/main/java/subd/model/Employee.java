@@ -30,8 +30,8 @@ public class Employee{
     }
 
     public String toString() {
-        return fio + ", "+ passport + ", " + address + ", "
-                + phone + ", "+ position + ", " +  salary + "\n";
+        return fio + ", "+ position + ", " + passport + ", "+ address + ", "
+                + phone + ", " +  salary;
     }
 
     public String getFio(){

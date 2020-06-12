@@ -24,19 +24,19 @@ public class JpaApplication {
     public void onStart() {
 
         start=new Timestamp(System.currentTimeMillis());
-        cs.firstZapros();
+        cs.getRequestByDateZapros(new Timestamp(1582502400), new Timestamp(1585440000));
         end=new Timestamp(System.currentTimeMillis());
         System.out.println("Время выполнения запроса: " + (end.getTime() - start.getTime()) + " мс");
 
         System.out.println("----------------------------------------------------------");
         start=new Timestamp(System.currentTimeMillis());
-        cs.secondZapros();
+        cs.getEmployeeByMenedzherPositionZapros('menedzher');
         end=new Timestamp(System.currentTimeMillis());
         System.out.println("Время выполнения запроса: " + (end.getTime() - start.getTime()) + " мс");
 
         System.out.println("----------------------------------------------------------");
         start=new Timestamp(System.currentTimeMillis());
-        cs.thirdZapros();
+        cs.getCarZapros();
         end=new Timestamp(System.currentTimeMillis());
         System.out.println("Время выполнения запроса: " + (end.getTime() - start.getTime()) + " мс");
 

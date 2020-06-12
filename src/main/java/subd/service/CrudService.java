@@ -56,20 +56,17 @@ public class CrudService {
         td.findAll();
     }
 
-    public void firstZapros(){
-            System.out.println("Запрос 1");
-            re.zapros();
-            re.findAll();
+        public void getRequestByDateZapros(Timestamp dateFrom, Timestamp dateTo){
+            System.out.println("Запрос 1 ");
+            System.out.println(re.zapros(dateFrom, dateTo);
         }
-        public void secondZapros(){
+        public void getEmployeeByMenedzherPositionZapros(String pos){
             System.out.println("Запрос 2");
-            em.zapros();
-            em.findAll();
+            System.out.println( em.zapros(pos));
         }
-        public void thirdZapros(){
+        public void getCarZapros(){
             System.out.println("Запрос 3");
-            cr.zapros();
-            cr.findAll();
+            System.out.println(cr.zapros());
         }
 
         public void updateCar((Integer carid, String model, String mark,String color, Integer price,String availability,

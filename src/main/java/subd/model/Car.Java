@@ -36,8 +36,7 @@ public class Car {
     }
     @Override
     public String toString() {
-        return model+", "+mark+", "+model+", "+color+", "+
-                price+", "+availability+", "+ year+"\n";
+        return mark+", "+model+", "+color+", "+ availability+", "+price;
     }
 
     public String getModel(){
